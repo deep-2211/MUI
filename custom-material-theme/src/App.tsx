@@ -14,7 +14,11 @@ const theme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Main />
+      <Main
+        salutation="Hello"
+        information="This is rendered through HOC"
+        btnName="Do Submit"
+      />
     </ThemeProvider>
   );
 }
